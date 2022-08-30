@@ -1,0 +1,152 @@
+body {
+	background: aqua;
+}
+
+header {
+
+    background: #333333;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+}
+
+nav a:hover {
+
+    background-color: #0096ff;
+
+    color: black;
+
+}
+
+main {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 80%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.block {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+ul {
+    /* Убираю маркеры у списка*/
+    list-style: none;
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю отступы. */
+    margin: 0px;
+    /* Убираю еще отступы! */
+    padding:5px;
+}
+ul:after {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю выравнивание. */
+    float: none;
+    content: ' ';
+    clear: both;
+}
+ul.mmenuu > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+}
+ul.mmenuu > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    color: #fff;
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю цвет. */
+    background-color: ;
+}
+ul.mmenuu > li > a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: #0096ff;
+}
+ul.ssubmenuu {
+    position: absolute;
+    width: 360px;
+    top: 37px;
+    left:0px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    background-color: white;
+}
+ul.ssubmenuu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+}
+ul.ssubmenuu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+    color: #ffffff;
+    /* Еще цвет. */
+    background-color: #0096ff;
+}
+ul.ssubmenuu > li > a:hover {
+    /* Цвет бэкграунда при наведении. */
+    background-color: #eb9316;
+    /* Задаю подчеркивание*/
+    text-decoration: underline;
+}
+ul.mmenuu > li:hover > ul.ssubmenuu {
+    /* Делаю элементы блочными. */
+    display: block;
+}
+
+
+
+
+
+h3 {
+	margin-left: 50px;
+}
+
+p {
+    font-size: 18px;
+}
